@@ -1,0 +1,205 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+.film{
+  margin-top: 50px;
+}
+.img-full {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.back {
+  margin-top: 50px;
+  background-image: url("./public/back/cinema4.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  height: 800px;
+  border-radius: 30px 30px 30px 30px;
+  opacity: 1;
+  position: relative;
+}
+
+.checked {
+  color: gold;
+}
+
+.card{
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 50px !important;
+  overflow: hidden;
+  margin-bottom: 30px;
+  width: 100% !important;
+}
+.title-card, .description-card {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  color: white;
+  background-color: rgba(0,0,0, 0.3);
+  height: 100%;
+  width: 100%;
+  transition: all ease 500ms;
+ 
+}
+
+.back:hover >.card-border-style{
+  transition: all ease 500ms;
+  opacity: 1;
+}
+
+.description-card {
+  opacity: 0;
+  
+}
+
+.card:hover > .description-card {
+ opacity: 1;
+} 
+
+.card:hover > .title-card {
+  opacity: 0;
+ } 
+
+ .card-border-style{
+  padding: 50px;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px 10px 10px 10px;
+  background-color:#DC3545;
+  box-shadow: 5px 2px 3px black, 
+   -2px -2px 3px white;
+  opacity: 0;
+  position: relative;
+  top: 150px;
+ }
+
+.inCardPropos{
+  font-size: 50px;
+  text-align: center;
+}
+.inCard{
+  font-size: 20px;
+  text-align: center;
+  padding-top: 30;
+}
+ footer{
+   background-color: black;
+   height: 200px;
+   margin-top: 100px;
+
+ }
+a{
+  outline: none;
+  text-decoration: none;
+}
+p{
+  color: white;
+}
+
+img.logo{
+  margin-top: 30px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+ .container-flex {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 30px;
+ }
+
+ .preinscription{
+  margin-top: 50px;
+  border-radius: 50px;
+  background: #f9c367;
+  box-shadow: 3px 3px 3px grey,  
+  2px 2px 3px white;
+ }
+ 
+ .titre-preinscription{
+  font-size: 50px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+ }
+
+ h4{
+   text-align: center;
+  padding: 50px;
+ }
+
+ .form-group{
+   padding-left: 100px;
+   padding-right: 100px;
+ }
+
+
+ 
+.btn{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.envoyé{
+ align-items: center;
+ margin-left: 500px;
+ margin-bottom: 30px;
+ width: 100px;
+}
+
+.section-img , .section-Apropos{
+  margin-bottom: 100px;
+}
+
+footer{
+  padding-top: 10px;
+}
+
+ @media (max-width: 800px) {
+  .container-flex {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+ }
+
+ @media (max-width: 560px) {
+  .container-flex {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+ }
+
+
+
+  
+ 
+
+
+
